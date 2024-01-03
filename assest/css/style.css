@@ -1,0 +1,1765 @@
+/*********** roles *************/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.contianer{
+    width: 90%;
+    margin: auto;
+}
+
+:root{
+    --word-font: 'Young Serif', serif ;
+    --normal-font : 'Poppins', sans-serif;  
+}
+
+/******************** header *******************/
+
+header{
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 900;
+}
+
+.navbar-contnet{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.logo{
+    color: #fff;
+    font-weight: 800;
+    font-size: 25px;
+    opacity: 1;
+    transition: opacity 0.5s ease ;
+    text-decoration: none;
+}
+
+.logo:hover{
+    color: #fff;
+    opacity: 0.5;
+}
+
+
+.hidden-btn{
+    opacity: 0;
+}
+
+.navbar-contnet .menu span i{
+    font-size: 20px;
+    color: #000;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.row{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: #632F18;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    left: -2000px;
+    transition: transform 0.9s ease;
+}
+
+.row-open{
+    transform: translateX(131%);
+}
+
+.row .close-menu{
+    text-align: right;
+    margin: 25px 0 0 -50px;
+}
+
+.row .close-menu span i{
+    margin-top: 20px;
+    color: #000;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.50s ease;
+}
+
+.row .close-menu span i:hover{
+    transform: rotate(360deg);
+    background-color: transparent;
+    color: #fff;
+}
+
+.row ul {
+    text-align: center;
+    margin: auto;
+    position: sticky;
+    margin-top: -10%;
+    margin-left: 0%;
+}
+
+.row ul li {
+    margin-bottom: 20px;
+}
+
+.row ul a {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.row ul a:hover{
+    color: #c7662d;
+}
+
+
+/****************************** HOME ******************************/
+
+.home{
+    position: relative;
+    background: url(../img/slider-bg.jpg)  fixed no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.home .home-content{
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    width: 400px;
+    color: #fff;
+}
+
+.home .home-content span{
+    font-size: 55px;
+    font-weight: 700;
+    font-family: var(--word-font);
+    margin-bottom: 20px;
+}
+
+.home .home-content p{
+    font-weight: 400;
+    font-size: 18px;
+    width: 600px;
+    margin: 25px 0 60px 0;
+}
+
+.home .home-content a{
+    padding: 10px 30px;
+    border: 1px solid #F45D2F;
+    color: #F45D2F;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+    text-decoration: none;
+}
+
+.home .home-content a:hover{
+    border: none;
+    background-color: #F45D2F;
+    color: #fff;
+}
+
+/****************************** PRODUCTS ******************************/
+
+.___title{
+    text-align: center;
+    margin: 80px auto;
+    font-family: var(--word-font);
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.products .products-content .cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(20% * 4);
+    justify-content: center;
+    margin: auto;
+}
+
+.products .products-content .cards .card{
+    text-align: center;
+    background-color: #F0F0EF;
+    width: 250px;
+    height: 300px;
+    padding: 5px;
+    position: relative;
+    margin:15px 0 0 15px;
+}
+
+.products .products-content .cards .card .small{
+    width: 120px;
+    height: auto;
+    position: absolute;
+    left: 27%;
+    top: 30%;
+}
+
+.products .products-content .cards .card .md{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    left: 33%;
+    top: 30%;
+}
+
+.products .products-content .cards .card .big{
+    width: 70px;
+    height: auto;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+}
+
+.products .products-content .cards .card .v-big{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left: 37%;
+    top: 30%;
+}
+
+.products .products-content .cards .card .new{
+    position: absolute;
+    background-color: #fff;
+    padding: 10px 6px;
+    font-size: 14px;
+    border-radius: 50%;
+    left: 5%;
+}
+
+.products .products-content .cards .card p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.products .products-content .cards .card .pragraph{
+    position: absolute;
+    display: flex;
+    bottom: 5%;
+    left: 5%;
+}
+
+.products .products-content .cards .card .price{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.products .products-content .cards .card .price span{
+    color: #F45D2F;
+    margin-left: 5px;
+}
+
+.products .products-content .more{
+    text-align: center;
+    margin: 50px auto;
+}
+
+.products .products-content .more a{
+    background-color: #F45D2F;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.products .products-content .more a:hover{
+    border: 1px solid #F45D2F;
+    background-color: transparent;
+    color: #F45D2F;
+}
+
+/****************************** ABOUT ******************************/
+.about{
+    width: 100%;
+    margin: 100px auto;
+}
+
+.about .about-content{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid: 20px;
+    margin: auto;
+}
+
+.about .about-content .left-section{
+    left:10%;
+    position: absolute;
+}
+
+.about .about-content .left-section span i{
+    position: relative;
+    font-size: 350px;
+}
+
+.about .about-content .left-section img{
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    top: 20%;
+    left: 20%;
+}
+
+.about .about-content .right-section{
+    position: sticky;
+    left: 50%;
+    margin: auto;
+}
+
+.about .about-content .right-section .title{
+    margin: 80px 0 20px 0 ;
+    text-transform: uppercase;
+    font-family: var(--word-font);
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.about .about-content .right-section p {
+    line-height: 35px;
+    margin-bottom: 50px;
+    width: 500px;
+}
+
+.about .about-content .right-section .btn{
+    background-color: #F45D2F;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+    padding: 10px 30px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.about .about-content .right-section .btn:hover{
+    border: 1px solid #F45D2F;
+    background-color: transparent;
+    color: #F45D2F;
+}
+
+/****************************** BANNER ******************************/
+
+.banner{
+    width:97%;
+    margin: 100px auto;
+}
+
+.banner .banner-content{
+    margin: auto;
+    width: calc(50% * 2);
+    display: flex;
+}
+
+.banner .banner-content .left-banner{
+    position: relative;
+}
+
+.banner .banner-content .left-banner img{
+    width: 800px;
+    height: 550px;
+    margin-right: 20px;
+}
+
+.banner .banner-content .left-banner .detales{
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    color: #fff;
+    font-family: var(--word-font);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.banner .banner-content .left-banner .detales a{
+    color: #F45D2F;
+    border: 1px solid #F45D2F;
+    padding: 10px 30px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.banner .banner-content .left-banner .detales a:hover{
+    background-color: #F45D2F;
+    color: #F0F0EF;
+}
+
+.banner .banner-content .right-banner .top-banner{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.banner .banner-content .right-banner .bottom-banner{
+    position: relative;
+}
+
+.banner .banner-content .right-banner img{
+    width: 650px;
+    height: 272px;
+}
+
+.banner .banner-content .right-banner .detales{
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    color: #fff;
+    font-family: var(--word-font);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.banner .banner-content .right-banner .detales p{
+    margin-bottom: 20px;
+}
+
+.banner .banner-content .right-banner .detales a{
+    color: #F45D2F;
+    border: 1px solid #F45D2F;
+    padding: 10px 30px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.banner .banner-content .right-banner .detales a:hover{
+    background-color: #F45D2F;
+    color: #F0F0EF;
+}
+
+/****************************** BLOG ******************************/
+
+.blog{
+    margin: 150px auto;
+}
+
+.blog .container .cards_content{
+    display: flex;
+    justify-content: center;
+}
+
+.blog .container .cards_content .__banner{
+    margin-right: 15px;
+}
+
+.blog .blog-banner{
+    margin: auto;
+    display: block;
+    width: 500px;
+    background-color: #bababa3b ;
+}
+
+.blog .blog-banner .content img{
+    width: 100%;
+}
+
+.blog .blog-banner .content .del{
+    padding: 20px;
+}
+
+.blog .blog-banner .content .del .date{
+    position: sticky;
+    margin-top: -60px;
+    color: #fff;
+    background-color: #632F18;
+    border: 4px solid #fff;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.blog .blog-banner .content .del .date span{
+    display: block;
+}
+
+
+.blog .blog-banner .content .del .info {
+    text-align: left;
+    width: 350px;
+}
+
+.blog .blog-banner .content .del .info .title{
+    margin: 5px 10px;
+    font-weight: 800;
+}
+
+.blog .blog-banner .content .del .info .des{
+    margin: 5px 10px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.blog .blog-banner .content .del .read-more{
+    margin-top: 20px;
+    color: #632F18;
+    border: 1px solid #632F18;
+    padding: 7px 14px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.blog .blog-banner .content .del .read-more:hover{
+    color: #fff;
+    background-color: #632F18;
+    border: none;
+}
+
+/****************************** SLIDER ******************************/
+
+.slider{
+    margin: auto;
+}
+
+.slider .content{
+    width: 100%;
+}
+
+.slider .sliders{
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slider .sliders ul {
+    width: 60%;
+    height: 320px;
+    margin: auto;
+}
+
+.slider .sliders ul .slider_content{
+    background-color: #3f1e0f;
+    color: #fff;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.slider .sliders ul .slider_content .img_background{
+    background-color: #F6F6F6F6;
+    width: 18%;
+    padding: 5px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.slider .sliders ul .slider_content .img_background img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.slider .sliders ul .slider_content .title{
+    margin-top: 15px;
+    color: #bc401a;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.slider .sliders ul .slider_content .Pragraph{
+    font-size: 15px;
+}
+
+.slider .sliders ul .slider_content .end i{
+    margin: 0 -10px 0px 0px;
+    font-size: 15px;
+}
+
+.slider .buttons{
+    margin: 20px auto;
+    text-align: center;
+}
+
+.slider .buttons button{
+    padding: 7px 14px;
+    border: none;
+    background-color: #bc401a;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.slider .buttons button:hover{
+    background-color: transparent;
+    color: #bc401a;
+}
+
+/****************************** contact ******************************/
+.contact{
+    background-color: #3f1e0f;
+    margin: 50px 0 0 0 ;
+    padding: 20px;
+}
+
+.contact .container .content {
+    text-align: center;
+    margin: 20px auto;
+    color: #fff;
+}
+
+.contact .container .content .social{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.contact .container .content .social form{
+    position: relative;
+    width: 40%;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.contact .container .content .social form input{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.contact .container .content .social form input::placeholder{
+    color: #8a8a8a8f;
+}
+
+.contact .container .content .social form button{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 10%;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    background: #c7662d;
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.contact .container .content .social a{
+    padding: 7px 14px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.contact .container .content .social a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.contact .container .content .contact_lists{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.contact .container .content .contact_lists li ul li{
+    margin-right: 20px;
+}
+
+.contact .container .content .contact_lists li ul .title{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .container .content .contact_lists li ul .link{
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 18px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.contact .container .content .contact_lists li ul .link::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #b2520d;
+    transform-origin: center;
+    transform: translate(-50%, 0) scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact .container .content .contact_lists li ul .link:hover::before {
+    transform: translate(-50%, 0) scaleX(1);
+}
+
+.contact .container .content .contact_lists li ul .link:hover{
+    color: #c7662d;
+}
+
+.contact .container .content .contact_lists li ul .instgram_info{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.contact .container .content .contact_lists li ul .instgram_info .img_background_contact{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background-color: #fff;
+    margin-right: 5px;
+}
+
+.contact .container .content .contact_lists li ul .instgram_info .img_background_contact img{
+    width: 100%;
+    height: 100%;
+}
+
+.contact .container .content .contact_lists li ul .instgram_info .des{
+    text-align: left;
+}
+
+.contact .container .content .contact_lists li ul .about_me{
+    width: 250px;
+    text-align: left;
+}
+
+.contact .container .content .contact_lists li ul .contact_info{
+    display: flex;
+}
+
+.contact .container .content .contact_lists li ul .contact_info i{
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+
+.contact_sm{
+    background-color: #3f1e0f;
+    margin: 50px 0 0 0 ;
+    padding: 20px;
+    display: none;
+}
+
+.contact_sm .container .content {
+    text-align: center;
+    margin: 20px auto;
+    color: #fff;
+}
+
+.contact_sm .container .content .social{
+    display: block;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.contact_sm .container .content .social form{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-right: 15px;
+    margin-bottom: 35px;
+}
+
+.contact_sm .container .content .social form input{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.contact_sm .container .content .social form input::placeholder{
+    color: #8a8a8a8f;
+}
+
+.contact_sm .container .content .social form button{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 10%;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    background: #c7662d;
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.contact_sm .container .content .social a{
+    padding: 7px 14px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.contact_sm .container .content .social a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.contact_sm .container .content .contact_lists{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.contact_sm .container .content .contact_lists li ul li{
+    margin-right: 20px;
+    display: flex;
+}
+
+.contact_sm .container .content .contact_lists li ul .title{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 25px auto 20px auto;
+}
+
+.contact_sm .container .content .contact_lists li ul .link{
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.contact_sm .container .content .contact_lists li ul .link::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #b2520d;
+    transform-origin: center;
+    transform: translate(-50%, 0) scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact_sm .container .content .contact_lists li ul .link:hover::before {
+    transform: translate(-50%, 0) scaleX(1);
+}
+
+.contact_sm .container .content .contact_lists li ul .link:hover{
+    color: #c7662d;
+}
+
+.contact_sm .container .content .contact_lists li ul .instgram_info{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.contact_sm .container .content .contact_lists li ul .instgram_info .img_background_contact{
+    width: 80px;
+    height: 50px;
+    padding: 5px;
+    background-color: #fff;
+    margin-right: 7px;
+}
+
+.contact_sm .container .content .contact_lists li ul .instgram_info .img_background_contact img{
+    width: 100%;
+    height: 100%;
+}
+
+.contact_sm .container .content .contact_lists li ul .instgram_info .des{
+    text-align: left;
+    font-size: 14px;
+}
+
+.contact_sm .container .content .contact_lists li ul .about_me{
+    width: 250px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.contact_sm .container .content .contact_lists li ul .contact_info{
+    display: flex;
+    font-size: 13px;
+}
+
+.contact_sm .container .content .contact_lists li ul .contact_info i{
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+/****************************** footer ******************************/
+
+.footer .___footer{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 15px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.footer .___footer span{
+    color:#b2520d;
+}
+
+/****************************** media query ******************************/
+
+/************************** xxLG ************************/
+@media (max-width: 1399.98px){
+    
+    .row-open{
+        transform: translateX(169%);
+    }
+    
+    /****************************** ABOUT ******************************/
+
+    .about .about-content .left-section span i{
+        font-size: 300px;
+    }
+
+    .about .about-content .left-section img{
+        position: absolute;
+        width: 400px;
+        height: 250px;  
+    }
+
+    .about .about-content .right-section{
+        left: 55%;
+    }
+
+    .about .about-content .right-section .title{
+        margin: 60px 0 20px 0 ;
+        font-size: 25px;
+    }
+
+    .about .about-content .right-section p {
+        line-height: 30px;
+        margin-bottom: 25px;
+        width: 450px;
+    }
+
+    .about .about-content .right-section .btn{
+        padding: 10px 25px;
+    }
+    /****************************** BANNER ******************************/
+
+    .banner .banner-content .left-banner img{
+        width: 700px;
+    }
+
+    .banner .banner-content .right-banner img{
+        width: 430px;
+    }
+
+    /****************************** BLOG ******************************/
+
+    .blog{
+        margin: 70px auto;
+    }
+
+    /****************************** SLIDER ******************************/
+
+    .slider{
+        margin: -70px auto auto auto;
+    }
+
+}
+/************************** LG && XLG ************************/
+@media (min-width:991.98px) and (max-width: 1199.98px){
+    .row-open{
+        transform: translateX(205%);
+    }
+    
+    /****************************** ABOUT ******************************/
+
+    .about .about-content .left-section span i{
+        font-size: 280px;
+    }
+
+    .about .about-content .left-section img{
+        position: absolute;
+        width: 115%;
+        height: 250px;  
+    }
+
+    .about .about-content .right-section{
+        left: 55%;
+    }
+
+    .about .about-content .right-section .title{
+        margin: 60px 0 20px 0 ;
+        font-size: 25px;
+    }
+
+    .about .about-content .right-section p {
+        line-height: 30px;
+        margin-bottom: 25px;
+        width: 400px;
+    }
+
+    .about .about-content .right-section .btn{
+        padding: 10px 25px;
+    }
+    /****************************** BANNER ******************************/
+
+    .banner .banner-content .left-banner img{
+        width: 98%;
+    }
+
+    .banner .banner-content .right-banner img{
+        width: 100%;
+    }
+
+    /****************************** BLOG ******************************/
+
+    .blog{
+        margin: 70px auto;
+    }
+    
+    .blog .blog-banner{
+        width: 400px;
+    }
+    /****************************** SLIDER ******************************/
+
+    .slider{
+        margin: -70px auto auto auto;
+    }
+    /****************************** contact ******************************/
+
+    .contact .container .content .contact_lists li ul .title{
+        font-size: 20px;
+    }
+
+    .contact .container .content .contact_lists li ul .link{
+        font-size: 13px;
+    }
+
+    .contact .container .content .contact_lists li ul .instgram_info{
+        font-size: 13px;
+    }
+
+    .contact .container .content .contact_lists li ul .instgram_info .img_background_contact{
+        width: 80px;
+    }
+
+    .contact .container .content .contact_lists li ul .about_me{
+        font-size: 13px;
+    }
+
+    .contact .container .content .contact_lists li ul .contact_info{
+        font-size: 13px;
+    }
+
+    .contact .container .content .contact_lists li ul .contact_info i{
+        font-size: 15px;
+    }
+
+    /****************************** footer ******************************/
+
+    .footer .___footer{
+        font-size: 13px;
+    }
+}
+/************************** MD && LG ************************/
+@media (min-width: 767.98px) and (max-width: 991.98px){
+
+    .row-open{
+        transform: translateX(266%);
+    }
+
+    /****************************** HOME ******************************/
+
+    .home .home-content{
+        width: 300px;
+    }
+
+    .home .home-content span{
+        font-size: 40px;
+    }
+
+    .home .home-content p{
+        font-weight: 200;
+        font-size: 18px;
+        width: 450px;
+    }
+
+    .home .home-content a{
+        padding: 10px 25px;
+    }
+
+    /****************************** ABOUT ******************************/
+
+    .about .about-content .left-section span i{
+        font-size: 280px;
+    }
+
+    .about .about-content .left-section img{
+        position: absolute;
+        width: 115%;
+        height: 250px;  
+    }
+
+    .about .about-content .left-section{
+        left:0%;
+    }
+
+    .about .about-content .right-section{
+        left: 60%;
+    }
+
+    .about .about-content .right-section .title{
+        margin: 40px 0 20px 0 ;
+        font-size: 20px;
+    }
+
+    .about .about-content .right-section p {
+        line-height: 30px;
+        margin-bottom: 25px;
+        width: 280px;
+    }
+
+    .about .about-content .right-section .btn{
+        padding: 10px 25px;
+    }
+    /****************************** BANNER ******************************/
+
+    .banner .banner-content .left-banner img{
+        width: 98%;
+    }
+
+    .banner .banner-content .right-banner img{
+        width: 100%;
+    }
+
+    /****************************** BLOG ******************************/
+
+    .blog{
+        margin: 70px auto;
+    }
+    
+    .blog .blog-banner{
+        width: 350px;
+    }
+    /****************************** SLIDER ******************************/
+
+    .slider{
+        margin: -80px auto auto auto;
+    }
+    /****************************** contact ******************************/
+
+    .contact .container .content .contact_lists li ul .title{
+        font-size: 18px;
+    }
+
+    .contact .container .content .contact_lists li ul li{
+        margin-right: -10px;
+    }
+
+    .contact .container .content .contact_lists li ul .link{
+        font-size: 12px;
+    }
+
+    .contact .container .content .contact_lists li ul .instgram_info{
+        font-size: 12px;
+    }
+
+    .contact .container .content .contact_lists li ul .instgram_info .img_background_contact{
+        width: 80px;
+    }
+
+    .contact .container .content .contact_lists li ul .about_me{
+        font-size: 12px;
+    }
+
+    .contact .container .content .contact_lists li ul .contact_info{
+        font-size: 10px;
+    }
+
+    .contact .container .content .contact_lists li ul .contact_info i{
+        font-size: 15px;
+    }
+
+    /****************************** footer ******************************/
+
+    .footer .___footer{
+        font-size: 13px;
+    }
+}
+/************************** SM && MD ************************/
+@media (min-width: 575.98px) and (max-width: 767.98px){
+    .row-open{
+        transform: translateX(355%);
+    }
+
+    /****************************** HOME ******************************/
+
+    .home .home-content{
+        width: 300px;
+    }
+
+    .home .home-content span{
+        font-size: 40px;
+    }
+
+    .home .home-content p{
+        font-weight: 200;
+        font-size: 18px;
+        width: 450px;
+    }
+
+    .home .home-content a{
+        padding: 10px 25px;
+    }
+
+    /****************************** ABOUT ******************************/
+
+    .about .about-content{
+        display: block;
+    }
+
+    .about .about-content .left-section span i{
+        font-size: 300px;
+    }
+
+    .about .about-content .left-section img{
+        position: absolute;
+        width: 120%;
+        height: 250px;  
+    }
+
+    .about .about-content .left-section{
+        position: sticky;
+        margin-left:5%;
+    }
+
+    .about .about-content .right-section{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .about .about-content .right-section .title{
+        margin: 40px 0 20px 0 ;
+        font-size: 20px;
+    }
+
+    .about .about-content .right-section p {
+        line-height: 30px;
+        margin: auto auto 25px auto;
+        width: 280px;
+        }
+
+    .about .about-content .right-section .btn{
+        padding: 10px 25px;
+    }
+    /****************************** BANNER ******************************/
+
+    .banner .banner-content .left-banner img{
+        width: 100%;
+    }
+
+    .banner .banner-content .right-banner img{
+        width: 100%;
+    }
+    
+    .banner .banner-content{
+        margin: auto;
+        width: calc(100% * 1);
+        display: block;
+    }
+    
+    .banner .banner-content .left-banner{
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    .banner .banner-content .right-banner{
+        margin: auto;
+        width: calc(50% * 2);
+        display: flex;
+    }
+    
+    .banner .banner-content .right-banner .top-banner{
+        position: relative;
+        margin: auto 15px 10px auto;
+    }
+    
+
+    .banner .banner-content .right-banner .detales p{
+        font-size: 18px;
+    }
+    
+    .banner .banner-content .right-banner .detales a{
+        padding: 10px 15px;
+    }
+
+    /****************************** BLOG ******************************/
+
+    .blog{
+        margin: 70px auto;
+    }
+    
+    .blog .blog-banner{
+        width: 350px;
+    }
+
+    .blog .container .cards_content{
+        display: block;
+        justify-content: center;
+    }
+    
+    .blog .container .cards_content .left-banner {
+        margin: auto 67px 20px auto;
+    }
+
+    .blog .blog-banner .content .del .info .title{
+        font-size: 14px;
+    }
+    
+    .blog .blog-banner .content .del .info .des{
+        font-size: 14px;
+        width: 300px;
+    }
+
+    /****************************** SLIDER ******************************/
+
+    .slider{
+        margin: 80px auto auto auto;
+    }
+
+    .slider .sliders ul {
+        width: 90%;
+    }
+    /****************************** contact ******************************/
+
+    .contact{
+    display: none;
+    }
+
+    .contact_sm{
+        display: block;
+    }
+    
+
+    /****************************** footer ******************************/
+
+    .footer .___footer{
+        font-size: 13px;
+    }
+}
+/************************** SM ************************/
+@media (min-width: 400.98px) and (max-width: 575.98px){
+
+    .logo{
+        font-size: 20px;
+    }
+    
+    .row{
+        left: -100%;
+    }
+
+    .row-open{
+        transform: translateX(100%);
+    }
+
+    /****************************** HOME ******************************/
+
+    .home .home-content{
+        width: 300px;
+    }
+
+    .home .home-content span{
+        font-size: 35px;
+    }
+
+    .home .home-content p{
+        font-weight: 200;
+        font-size: 15px;
+        width: 350px;
+    }
+
+    .home .home-content a{
+        padding: 7px 25px;
+    }
+
+    /****************************** ABOUT ******************************/
+
+    .about .about-content{
+        display: block;
+    }
+
+    .about .about-content .left-section span i{
+        font-size: 300px;
+    }
+
+    .about .about-content .left-section img{
+        position: absolute;
+        width: 120%;
+        height: 250px;  
+    }
+
+    .about .about-content .left-section{
+        position: sticky;
+        margin-left:-3%;
+    }
+
+    .about .about-content .right-section{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .about .about-content .right-section .title{
+        margin: 40px 0 20px 0 ;
+        font-size: 20px;
+    }
+
+    .about .about-content .right-section p {
+        line-height: 30px;
+        margin: auto auto 25px auto;
+        width: 280px;
+        }
+
+    .about .about-content .right-section .btn{
+        padding: 10px 25px;
+    }
+    /****************************** BANNER ******************************/
+
+    .banner .banner-content .left-banner img{
+        width: 100%;
+    }
+
+    .banner .banner-content .right-banner img{
+        width: 100%;
+    }
+    
+    .banner .banner-content{
+        margin: auto;
+        width: calc(100% * 1);
+        display: block;
+    }
+    
+    .banner .banner-content .left-banner{
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    .banner .banner-content .right-banner{
+        margin: auto;
+        width: calc(50% * 2);
+        display: flex;
+    }
+    
+    .banner .banner-content .right-banner .top-banner{
+        position: relative;
+        margin: auto 15px 10px auto;
+    }
+    
+
+    .banner .banner-content .right-banner .detales p{
+        font-size: 18px;
+    }
+    
+    .banner .banner-content .right-banner .detales a{
+        padding: 10px 15px;
+    }
+
+    /****************************** BLOG ******************************/
+
+    .blog{
+        margin: 70px auto;
+    }
+    
+    .blog .blog-banner{
+        width: 350px;
+    }
+
+    .blog .container .cards_content{
+        display: block;
+        justify-content: center;
+    }
+    
+    .blog .container .cards_content .left-banner {
+        margin: auto 40px 20px auto;
+    }
+
+    .blog .blog-banner .content .del .info .title{
+        font-size: 14px;
+    }
+    
+    .blog .blog-banner .content .del .info .des{
+        font-size: 14px;
+        width: 300px;
+    }
+
+    /****************************** SLIDER ******************************/
+
+    .slider{
+        margin: 80px auto auto auto;
+    }
+
+    .slider .sliders ul {
+        width: 90%;
+        margin-left: -2px;
+    }
+    /****************************** contact ******************************/
+
+    .contact{
+        display: none;
+    }
+
+    .contact_sm{
+        display: block;
+    }
+
+    .contact_sm .container .content .contact_lists li ul li{
+        margin-right: 0px;
+    }
+
+    .contact_sm .container .content .contact_lists li ul .about_me{
+        width: 150px;
+        text-align: left;
+        font-size: 12px;
+        margin-right: 35px;
+    }
+
+    .contact_sm .container .content .contact_lists li ul .contact_info{
+        display: flex;
+        font-size: 13px;
+        margin-right: 70px;
+    }
+
+
+    /****************************** footer ******************************/
+
+    .footer .___footer{
+        font-size: 13px;
+    }
+}
+/************************** XS ************************/
+@media (max-width: 400.98px){
+
+    html{
+        overflow-x: hidden;
+    }
+
+    .logo{
+        font-size: 18px;
+    }
+    
+    .row{
+        left: -100%;
+    }
+
+    .row-open{
+        transform: translateX(100%);
+    }
+
+    /****************************** HOME ******************************/
+
+    .home .home-content{
+        width: 300px;
+    }
+
+    .home .home-content span{
+        font-size: 35px;
+    }
+
+    .home .home-content p{
+        font-weight: 200;
+        font-size: 15px;
+        width: 350px;
+    }
+
+    .home .home-content a{
+        padding: 7px 25px;
+    }
+
+    /****************************** ABOUT ******************************/
+
+    .about .about-content{
+        display: block;
+    }
+
+    .about .about-content .left-section span i{
+        font-size: 200px;
+    }
+
+    .about .about-content .left-section img{
+        position: absolute;
+        width: 120%;
+        height: 250px;  
+    }
+
+    .about .about-content .left-section{
+        position: sticky;
+        margin-left: 3%;
+    }
+
+    .about .about-content .right-section{
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .about .about-content .right-section .title{
+        margin: 40px 0 20px 0 ;
+        font-size: 20px;
+    }
+
+    .about .about-content .right-section p {
+        line-height: 30px;
+        margin: auto auto 25px auto;
+        width: 280px;
+        }
+
+    .about .about-content .right-section .btn{
+        padding: 10px 25px;
+    }
+    /****************************** BANNER ******************************/
+
+    .banner .banner-content .left-banner img{
+        width: 100%;
+    }
+
+    .banner .banner-content .right-banner img{
+        width: 100%;
+    }
+    
+    .banner .banner-content{
+        margin: auto;
+        width: calc(100% * 1);
+        display: block;
+    }
+    
+    .banner .banner-content .left-banner{
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    .banner .banner-content .right-banner{
+        margin: auto;
+        width: calc(50% * 2);
+        display: flex;
+    }
+    
+    .banner .banner-content .right-banner .top-banner{
+        position: relative;
+        margin: auto 15px 10px auto;
+    }
+    
+
+    .banner .banner-content .right-banner .detales p{
+        font-size: 18px;
+    }
+    
+    .banner .banner-content .right-banner .detales a{
+        padding: 10px 15px;
+    }
+
+    /****************************** BLOG ******************************/
+
+    .blog{
+        margin: 70px auto;
+    }
+    
+    .blog .blog-banner{
+        width: 300px;
+    }
+
+    .blog .container .cards_content{
+        display: block;
+        justify-content: center;
+    }
+    
+    .blog .container .cards_content .left-banner {
+        margin: auto 17px 20px auto;
+    }
+
+    .blog .blog-banner .content .del .info .title{
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    
+    .blog .blog-banner .content .del .info .des{
+        font-size: 12px;
+        width: 250px;
+    }
+
+    /****************************** SLIDER ******************************/
+
+    .slider{
+        margin: 80px auto auto auto;
+    }
+
+    .slider .sliders ul {
+        width: 90%;
+        height: 360px;
+        margin-left: -2px;
+    }
+
+    .slider .sliders ul .slider_content .img_background{
+        width: 30%;
+    }
+
+    /****************************** contact ******************************/
+
+    .contact{
+        display: none;
+    }
+
+    .contact_sm{
+        display: block;
+    }
+
+    .contact_sm .container .content .contact_lists li ul li{
+        margin-right: -10px;
+    }
+
+    .contact_sm .container .content .contact_lists li ul .about_me{
+        width: 100px;
+        text-align: left;
+        font-size: 10px;
+        margin-right: px;
+    }
+
+    .contact_sm .container .content .contact_lists li ul .contact_info{
+        display: flex;
+        font-size: 10px;
+    }
+
+    .contact_sm .container .content .contact_lists li ul .contact_info .email{
+        margin-right: 100px;
+    }
+
+
+    /****************************** footer ******************************/
+
+    .footer .___footer{
+        font-size: 12px;
+    }
+
+}
